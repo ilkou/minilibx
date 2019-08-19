@@ -1,0 +1,23 @@
+###update and upgrade ur system:
+#apt-get update
+#apt-get upgrade
+###then install the following packages:
+#apt-get install libx11-dev
+#apt-get install libxext-dev
+###then get minilibx sources:
+#git clone https://github.com/ttshivhula/minilibx minilibx_linux
+###Add a variable named PKG_CONFIG_PATH containing the path to minilibx_linux directory.
+#echo "export PKG_CONFIG_PATH=path to minilibx_linux directory" >> ~/.bashrc
+###Compile and install mlx.a in minilibx_linux with
+#make && sudo make install
+###then change MLXFLAGS in your makefile to:
+#MLXFLAG = -lm -lmlx -lXext -lX11 -L ./libft -lft -lpthread
+###############################################################################
+###otherwise you can use ubuntu bash on windows 10 from windows store:
+###do the same steps + you have to install gcc and make
+###to run graphical Linux programs on your windows 10 desktop 
+###you need a GUI server, such as X11. Such doesn’t not exist for Windows,
+###but there are alternatives, one of which is Xming, which can be downloaded
+###free of charge, from SourceForge : https://sourceforge.net/projects/xming/ (set private when ask)
+###then enable bash to use xming which can be done by typing the following line
+#echo "export DISPLAY=:0" >> ~/.bashrc
