@@ -37,15 +37,15 @@ git clone https://github.com/ttshivhula/minilibx minilibx_linux
 * do the previous steps + you have to install gcc and make
 ```
 ### Graphical programs
-```
+
 to run graphical programs on your windows 10 desktop
 
 you need a GUI server, such as X11. Such doesn’t not exist for Windows,
 
 but there are alternatives, one of which is Xming, which can be downloaded
 
-free of charge, from ```[SourceForge](https://sourceforge.net/projects/xming/) (set private when ask)
-```
+free of charge, from [SourceForge](https://sourceforge.net/projects/xming/) (set private when ask)
+
 then enable bash to use xming which can be done by typing the following line
 
 * echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
@@ -53,7 +53,7 @@ then enable bash to use xming which can be done by typing the following line
 its preferable to launch xming automatically after boot, move xming program to the following repo:
 
 * C:\Users\login\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
-```
+
 
 - after adding variables such PKG_CONFIG_PATH or DISPLAY, open a new bash session by typing
 ```
