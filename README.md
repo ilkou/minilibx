@@ -1,14 +1,14 @@
 # minilibx in linux / windows
 Minilibx is a very basic graphical library writting in C used in 42
 and in Epitech for infography project.
-# notes
-##update and upgrade ur system:
-###apt-get update
-###apt-get upgrade
-##Install the following packages:
-###apt-get install libx11-dev
-###apt-get install libxext-dev
-##Get minilibx sources:
+# Steps :
+## update and upgrade ur system:
+### apt-get update
+### apt-get upgrade
+## Install the following packages:
+### apt-get install libx11-dev
+### apt-get install libxext-dev
+## Get minilibx sources:
 ```
 git clone https://github.com/ttshivhula/minilibx minilibx_linux
 ```
