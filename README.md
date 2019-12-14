@@ -44,10 +44,8 @@ you need a GUI server, such as X11. Such doesn’t not exist for Windows,
 
 but there are alternatives, one of which is Xming, which can be downloaded
 
-free of charge, from :
-```
-* [SourceForge](https://sourceforge.net/projects/xming/) (set private when ask)
-```
+free of charge, from [SourceForge](https://sourceforge.net/projects/xming/) (set private when ask)
+
 then enable bash to use xming which can be done by typing the following line
 
 * echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
