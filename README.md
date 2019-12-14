@@ -48,7 +48,9 @@ free of charge, from [SourceForge](https://sourceforge.net/projects/xming/) (set
 
 then enable bash to use xming which can be done by typing the following line
 
-* echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
+```
+echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
+```
 
 its preferable to launch xming automatically after boot, move xming program to the following repo:
 
