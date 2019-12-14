@@ -20,15 +20,15 @@ git clone https://github.com/ttshivhula/minilibx minilibx_linux
 
 #### Add a variable named PKG_CONFIG_PATH containing the path to minilibx_linux directory.
 
-* echo "export PKG_CONFIG_PATH=path_to_minilibx_linux directory" >> ~/.bashrc
+* echo "export PKG_CONFIG_PATH=path_to_minilibx_linux_directory" >> ~/.bashrc
 
 #### Compile and install mlx.a in minilibx_linux with
 
 * cd minilibx_linux; make && sudo make install
 
-####Change MLXFLAGS in your makefile to:
+#### Change MLXFLAGS in your makefile to:
 
-* MLXFLAG = -lm -lmlx -lXext -lX11 -L ./libft -lft -lpthread
+* MLXFLAG = -lmlx -lXext -lX11
 
 ## Notes for windows
 ```
@@ -45,14 +45,24 @@ you need a GUI server, such as X11. Such doesn’t not exist for Windows,
 
 but there are alternatives, one of which is Xming, which can be downloaded
 
-free of charge, from SourceForge : https://sourceforge.net/projects/xming/ (set private when ask)
+free of charge, from SourceForge :
+
+* https://sourceforge.net/projects/xming/ (set private when ask)
 
 then enable bash to use xming which can be done by typing the following line
 
 * echo "export DISPLAY=localhost:0.0" >> ~/.bashrc
 
 its preferable to launch xming automatically after boot, move xming program to the following repo:
+
 * C:\Users\login\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ```
 
-- after adding variables such PKG_CONFIG_PATH or DISPLAY, open a new bash session by typing bash
+- after adding variables such PKG_CONFIG_PATH or DISPLAY, open a new bash session by typing
+```
+ bash
+```
+or
+```
+ source ~/.bashrc
+```
