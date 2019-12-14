@@ -32,10 +32,9 @@ git clone https://github.com/ttshivhula/minilibx minilibx_linux
 
 ## Notes for windows
 ```
+* install ubuntu terminal (or other distribution linux ) on windows 10 from windows store
 
-you can use ubuntu bash on windows 10 from windows store:
-
-do the previous steps + you have to install gcc and make
+* do the previous steps + you have to install gcc and make
 ```
 ### Graphical programs
 ```
