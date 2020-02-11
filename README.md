@@ -65,3 +65,21 @@ or
 ```
  source ~/.bashrc
 ```
+### Extra notes:
+* the process is explained using bash shell, you should modify it by whatever shell you are using (zsh, sh, ..)
+* to load xpm images with xpm_file_to_image function, you need to install bsd library:
+```
+sudo apt install libbsd-dev
+```
+* for events management, the mask should be (1L << 0) instead of 0
+```
+mlx_hook(p.win_ptr, 2, (1L << 0), ft_event_keys, &p);
+```
+* for simplify the usage of keys macros in mac os and linux, include key_macos.h and key_linux.h files:
+```
+# if defined(__APPLE__)
+#  include <key_macos.h>
+# else
+#  include <key_linux.h>
+# endif
+```
