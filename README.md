@@ -12,10 +12,11 @@ and in Epitech for infography project.
 
 * apt-get install libx11-dev
 * apt-get install libxext-dev
+* apt-get install clang
 
 ## Get minilibx sources:
 ```
-git clone https://github.com/ttshivhula/minilibx minilibx_linux
+git clone --branch minilibx_linux https://github.com/driwand/minilibx-1/
 ```
 
 #### Add a variable named PKG_CONFIG_PATH containing the path to minilibx_linux directory.
