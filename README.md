@@ -25,7 +25,7 @@ git clone https://github.com/ttshivhula/minilibx minilibx_linux
 
 #### Compile and install mlx.a in minilibx_linux with
 
-* cd minilibx; make && sudo make install
+* cd minilibx_linux; make && sudo make install
 
 #### Change MLXFLAGS in your makefile to:
 
