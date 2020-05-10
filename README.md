@@ -15,7 +15,7 @@ and in Epitech for infography project.
 
 ## Get minilibx sources:
 ```
-git clone https://github.com/ttshivhula/minilibx minilibx_linux
+git clone https://github.com/42Paris/minilibx-linux minilibx_linux
 ```
 
 #### Add a variable named PKG_CONFIG_PATH containing the path to minilibx_linux directory.
