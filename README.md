@@ -12,6 +12,7 @@ and in Epitech for infography project.
 
 * apt-get install libx11-dev
 * apt-get install libxext-dev
+* apt-get install libbsd-dev
 * apt-get install clang
 
 ## Get minilibx sources:
