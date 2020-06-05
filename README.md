@@ -10,23 +10,19 @@ and in Epitech for infography project.
 
 ### Install the following packages:
 
-* apt-get install libx11-dev
-* apt-get install libxext-dev
-* apt-get install libbsd-dev
-* apt-get install clang
+* apt install libx11-dev
+* apt install libxext-dev
+* apt install libbsd-dev
+* apt install clang
 
 ## Get minilibx sources:
 ```
 git clone https://github.com/42Paris/minilibx-linux minilibx_linux
 ```
 
-#### Add a variable named PKG_CONFIG_PATH containing the path to minilibx_linux directory.
-
-* echo "export PKG_CONFIG_PATH=path_to_minilibx_linux_directory" >> ~/.bashrc
-
 #### Compile and install mlx.a in minilibx_linux with
 
-* cd minilibx_linux; make && sudo make install
+* cd minilibx_linux; make && sudo ./configure
 
 #### Change MLXFLAGS in your makefile to:
 
@@ -59,7 +55,7 @@ its preferable to launch xming automatically after boot, move xming program to t
 * C:\Users\login\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 
 
-- after adding variables such PKG_CONFIG_PATH or DISPLAY, open a new bash session by typing
+- after adding variables such DISPLAY, open a new bash session by typing
 ```
  bash
 ```
@@ -69,15 +65,11 @@ or
 ```
 ### Extra notes:
 * the process is explained using bash shell, you should modify it by whatever shell you are using (zsh, sh, ..)
-* to load xpm images with xpm_file_to_image function, you need to install bsd library:
-```
-sudo apt install libbsd-dev
-```
 * for events management, the mask should be (1L << 0) instead of 0
 ```
 mlx_hook(p.win_ptr, 2, (1L << 0), ft_event_keys, &p);
 ```
-* for simplify the usage of keys macros in mac os and linux, include key_macos.h and key_linux.h files:
+* to simplify the usage of keys macros in mac os and linux, include key_macos.h and key_linux.h files:
 ```
 # if defined(__APPLE__)
 #  include <key_macos.h>
