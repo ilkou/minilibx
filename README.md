@@ -1,5 +1,5 @@
 # minilibx in linux / windows
-Minilibx is a very basic graphical library writting in C used in 42
+Minilibx is a very basic graphical library written in C used in 42
 and in Epitech for infography project.
 # Steps :
 
@@ -77,3 +77,8 @@ mlx_hook(p.win_ptr, 2, (1L << 0), ft_event_keys, &p);
 #  include <key_linux.h>
 # endif
 ```
+
+### Docker image
+
+`ilkou/minilibx`
+
