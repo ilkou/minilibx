@@ -80,5 +80,6 @@ mlx_hook(p.win_ptr, 2, (1L << 0), ft_event_keys, &p);
 
 ### Docker image
 
-`ilkou/minilibx`
+based on alpine: `ilkou/minilibx` or `ilkou/minilibx:1.0.0`
 
+based on ubuntu: `ilkou/minilibx:ubuntu`
